@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#1A1F29" />
     <meta
       name="description"
       content="Web site created using create-react-app"
@@ -39,5 +39,13 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      setTimeout(function() {
+        var font = document.createElement("link");
+        font.rel="stylesheet";
+        font.href="https://rsms.me/inter/inter.css";
+        document.body.appendChild(font);
+      }, 0);
+    </script>
   </body>
 </html>

@@ -1,0 +1,63 @@
+
+.Select {
+    
+}
+
+.select {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px inset, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.Select.active .select {
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px inset, rgb(94, 97, 255) 0px 0px 0px 2px inset, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+.value {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    background-size: 18px 18px;
+    opacity: 0.7;
+}
+
+.options {
+    position: absolute;
+    top: calc(100% + 5px);
+    width: 180px;
+    max-height: 200px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    color: white;
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px inset, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    background-color: rgba(39, 42, 51, 1.0);
+    overflow: scroll;
+    opacity: 0.0;
+    pointer-events: none;
+}
+
+.Select.active .options {
+    opacity: 1.0;
+    pointer-events: auto;
+}
+
+.option {
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}

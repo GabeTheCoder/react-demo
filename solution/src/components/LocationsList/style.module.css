@@ -1,0 +1,94 @@
+
+.LocationsList {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.card {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px inset, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    overflow: scroll;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    padding-bottom: 8px;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+}
+
+.list {
+
+}
+
+.item {
+    padding: 20px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.itemName {
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+}
+
+.itemInfo {
+    display: flex;
+    margin-top: 8px;
+}
+
+.infoIcon {
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+    opacity: 0.7;
+}
+
+.infoText {
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 20px;
+}
+
+.buttonPrimary {
+    margin-left: 12px;
+    padding: 8px 24px;
+    box-sizing: border-box;
+    background-color: rgb(94, 97, 255);
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s opacity ease;
+}
+
+.buttonPrimary:hover {
+    opacity: 0.8;
+}
+
+@media (min-width: 900px) {
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+        width: 600px;
+        height: 600px;
+    }
+}

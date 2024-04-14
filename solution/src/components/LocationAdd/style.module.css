@@ -1,0 +1,146 @@
+
+.AddLocation {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.AddLocation.visible {
+    pointer-events: auto;
+}
+
+.fader {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.0;
+    transition: 0.3s opacity ease;
+}
+
+.AddLocation.visible .fader {
+    opacity: 1.0;
+}
+
+.modal {
+    position: relative;
+    width: 100%;
+    margin-top: 120px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgb(26, 31, 41);
+    border-radius: 8px;
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px inset, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    opacity: 0.0;
+    transform: translateY(12px);
+    transition: 0.3s opacity ease, 0.3s transform ease;
+}
+
+.AddLocation.visible .modal {
+    opacity: 1.0;
+    transform: translateY(0px);
+}
+
+.title {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: white;
+}
+
+.field {
+    margin-top: 12px;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
+
+.inputContainer {
+    position: relative;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.input {
+    width: 100%;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    color: white;
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px inset, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    background-color: rgba(255, 255, 255, 0.05);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.input:focus {
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px inset, rgb(94, 97, 255) 0px 0px 0px 2px inset, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+.issue {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(156, 163, 175);
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+    width: 100%;
+}
+
+.buttonPrimary {
+    margin-left: 12px;
+    padding: 8px 24px;
+    box-sizing: border-box;
+    background-color: rgb(94, 97, 255);
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s opacity ease;
+}
+
+.buttonPrimary:hover {
+    opacity: 0.8;
+}
+
+.buttonSecondary {
+    margin-left: 12px;
+    padding: 8px 24px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px inset, rgb(55, 65, 81) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s opacity ease;
+}
+
+.buttonSecondary:hover {
+    opacity: 0.8;
+}
+
+@media (min-width: 900px) {
+    .modal {
+        width: 500px;
+    }
+}
