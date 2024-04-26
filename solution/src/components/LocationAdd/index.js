@@ -34,7 +34,7 @@ const LocationAdd = props => {
 
     useDebouncedRequest(async () => await isNameValid(name), valid => {
         updateState('name', !name ? 'empty' : (valid ? 'valid' : 'invalid'));
-    }, name, 1000);
+    }, name, 200);
     
     const updateName = e => {
         setName(e.target.value);
